@@ -12,6 +12,115 @@
 <body class="bg-light">
 
     <div class="container mt-5">
+
+        <!-- Carousel -->
+        <div id="carouselIngressos" class="carousel slide mb-4" data-bs-ride="carousel">
+
+            <div class="carousel-inner rounded shadow">
+
+                <div class="carousel-item active">
+                    <img src="https://picsum.photos/1200/400?random=1"
+                         class="d-block w-100"
+                         alt="Show 1">
+                </div>
+
+                <div class="carousel-item">
+                    <img src="https://picsum.photos/1200/400?random=2"
+                         class="d-block w-100"
+                         alt="Show 2">
+                </div>
+
+                <div class="carousel-item">
+                    <img src="https://picsum.photos/1200/400?random=3"
+                         class="d-block w-100"
+                         alt="Show 3">
+                </div>
+
+            </div>
+
+            <button class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#carouselIngressos"
+                    data-bs-slide="prev">
+
+                <span class="carousel-control-prev-icon"></span>
+
+            </button>
+
+            <button class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#carouselIngressos"
+                    data-bs-slide="next">
+
+                <span class="carousel-control-next-icon"></span>
+
+            </button>
+
+        </div>
+
+        <!-- Card Group -->
+        <div class="card-group mb-4">
+
+            <div class="card">
+                <img src="https://picsum.photos/300/200?random=4"
+                     class="card-img-top"
+                     alt="Ingresso Inteira">
+
+                <div class="card-body">
+                    <h5 class="card-title">Ingresso Inteira</h5>
+                    <p class="card-text">
+                        Acesso completo ao evento.
+                    </p>
+                </div>
+
+                <div class="card-footer">
+                    <small class="text-body-secondary">
+                        R$ 120,00
+                    </small>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://picsum.photos/300/200?random=5"
+                     class="card-img-top"
+                     alt="Meia Entrada">
+
+                <div class="card-body">
+                    <h5 class="card-title">Meia Entrada</h5>
+                    <p class="card-text">
+                        Desconto especial para estudantes.
+                    </p>
+                </div>
+
+                <div class="card-footer">
+                    <small class="text-body-secondary">
+                        R$ 60,00
+                    </small>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://picsum.photos/300/200?random=6"
+                     class="card-img-top"
+                     alt="VIP">
+
+                <div class="card-body">
+                    <h5 class="card-title">VIP</h5>
+                    <p class="card-text">
+                        Área exclusiva com benefícios premium.
+                    </p>
+                </div>
+
+                <div class="card-footer">
+                    <small class="text-body-secondary">
+                        R$ 250,00
+                    </small>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Formulário -->
         <div class="card shadow p-4">
             
             <h2 class="text-center mb-4">
@@ -24,20 +133,23 @@
 
                 <div class="accordion-item">
                     <h2 class="accordion-header">
-                        <button class="accordion-button" type="button" 
-                                data-bs-toggle="collapse" 
+                        <button class="accordion-button"
+                                type="button"
+                                data-bs-toggle="collapse"
                                 data-bs-target="#collapseOne">
+
                             Informações do Evento
+
                         </button>
                     </h2>
 
-                    <div id="collapseOne" 
+                    <div id="collapseOne"
                          class="accordion-collapse collapse show"
                          data-bs-parent="#accordionInfo">
 
                         <div class="accordion-body">
-                            Evento musical ao vivo com áreas VIP, meia entrada e inteira.
-                            Garanta seu ingresso antes que esgote.
+                            Evento musical ao vivo com áreas VIP,
+                            meia entrada e inteira.
                         </div>
 
                     </div>
@@ -45,21 +157,23 @@
 
                 <div class="accordion-item">
                     <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" 
+                        <button class="accordion-button collapsed"
                                 type="button"
                                 data-bs-toggle="collapse"
                                 data-bs-target="#collapseTwo">
+
                             Regras do Evento
+
                         </button>
                     </h2>
 
-                    <div id="collapseTwo" 
+                    <div id="collapseTwo"
                          class="accordion-collapse collapse"
                          data-bs-parent="#accordionInfo">
 
                         <div class="accordion-body">
-                            Obrigatória apresentação de documento com foto.
-                            Meia entrada exige comprovante válido.
+                            Obrigatória apresentação de documento
+                            com foto.
                         </div>
 
                     </div>
@@ -69,32 +183,50 @@
 
             <form>
 
-                <!-- Form Floating -->
+                <!-- Nome -->
                 <div class="form-floating mb-3">
-                    <input type="text" class="form-control" id="nome" placeholder="Digite seu nome">
+                    <input type="text"
+                           class="form-control"
+                           id="nome"
+                           placeholder="Digite seu nome">
+
                     <label for="nome">Nome Completo</label>
                 </div>
 
-                <!-- Form Floating -->
+                <!-- Email -->
                 <div class="form-floating mb-3">
-                    <input type="email" class="form-control" id="email" placeholder="Digite seu e-mail">
+                    <input type="email"
+                           class="form-control"
+                           id="email"
+                           placeholder="Digite seu e-mail">
+
                     <label for="email">E-mail</label>
                 </div>
 
-                <!-- Input Group -->
+                <!-- Valor -->
                 <div class="input-group mb-3">
                     <span class="input-group-text">R$</span>
-                    <input type="number" class="form-control" placeholder="Valor do ingresso">
+
+                    <input type="number"
+                           class="form-control"
+                           placeholder="Valor do ingresso">
                 </div>
 
                 <!-- Quantidade -->
                 <div class="form-floating mb-3">
-                    <input type="number" class="form-control" id="quantidade" placeholder="Quantidade">
-                    <label for="quantidade">Quantidade de Ingressos</label>
+                    <input type="number"
+                           class="form-control"
+                           id="quantidade"
+                           placeholder="Quantidade">
+
+                    <label for="quantidade">
+                        Quantidade de Ingressos
+                    </label>
                 </div>
 
-                <!-- Tipo de ingresso -->
+                <!-- Tipo -->
                 <div class="mb-3">
+
                     <label class="form-label">
                         Tipo de Ingresso
                         <span class="badge bg-primary">Novo</span>
@@ -106,12 +238,278 @@
                         <option>Meia Entrada</option>
                         <option>VIP</option>
                     </select>
+
                 </div>
 
                 <!-- Botão -->
                 <div class="d-grid">
-                    <button type="submit" class="btn btn-primary">
+                    <button type="submit"
+                            class="btn btn-primary">
+
                         Comprar Ingresso
+
+                    </button>
+                </div>
+
+            </form>
+
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html><!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venda de Ingressos</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-light">
+
+    <div class="container mt-5">
+
+        <!-- Carousel -->
+        <div id="carouselIngressos" class="carousel slide mb-4" data-bs-ride="carousel">
+
+            <div class="carousel-inner rounded shadow">
+
+                <div class="carousel-item active">
+                    <img src="https://picsum.photos/1200/400?random=1"
+                         class="d-block w-100"
+                         alt="Show 1">
+                </div>
+
+                <div class="carousel-item">
+                    <img src="https://picsum.photos/1200/400?random=2"
+                         class="d-block w-100"
+                         alt="Show 2">
+                </div>
+
+                <div class="carousel-item">
+                    <img src="https://picsum.photos/1200/400?random=3"
+                         class="d-block w-100"
+                         alt="Show 3">
+                </div>
+
+            </div>
+
+            <button class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#carouselIngressos"
+                    data-bs-slide="prev">
+
+                <span class="carousel-control-prev-icon"></span>
+
+            </button>
+
+            <button class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#carouselIngressos"
+                    data-bs-slide="next">
+
+                <span class="carousel-control-next-icon"></span>
+
+            </button>
+
+        </div>
+
+        <!-- Card Group -->
+        <div class="card-group mb-4">
+
+            <div class="card">
+                <img src="https://picsum.photos/300/200?random=4"
+                     class="card-img-top"
+                     alt="Ingresso Inteira">
+
+                <div class="card-body">
+                    <h5 class="card-title">Ingresso Inteira</h5>
+                    <p class="card-text">
+                        Acesso completo ao evento.
+                    </p>
+                </div>
+
+                <div class="card-footer">
+                    <small class="text-body-secondary">
+                        R$ 120,00
+                    </small>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://picsum.photos/300/200?random=5"
+                     class="card-img-top"
+                     alt="Meia Entrada">
+
+                <div class="card-body">
+                    <h5 class="card-title">Meia Entrada</h5>
+                    <p class="card-text">
+                        Desconto especial para estudantes.
+                    </p>
+                </div>
+
+                <div class="card-footer">
+                    <small class="text-body-secondary">
+                        R$ 60,00
+                    </small>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://picsum.photos/300/200?random=6"
+                     class="card-img-top"
+                     alt="VIP">
+
+                <div class="card-body">
+                    <h5 class="card-title">VIP</h5>
+                    <p class="card-text">
+                        Área exclusiva com benefícios premium.
+                    </p>
+                </div>
+
+                <div class="card-footer">
+                    <small class="text-body-secondary">
+                        R$ 250,00
+                    </small>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Formulário -->
+        <div class="card shadow p-4">
+            
+            <h2 class="text-center mb-4">
+                Venda de Ingressos
+                <span class="badge bg-success">Promoção</span>
+            </h2>
+
+            <!-- Accordion -->
+            <div class="accordion mb-4" id="accordionInfo">
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne">
+
+                            Informações do Evento
+
+                        </button>
+                    </h2>
+
+                    <div id="collapseOne"
+                         class="accordion-collapse collapse show"
+                         data-bs-parent="#accordionInfo">
+
+                        <div class="accordion-body">
+                            Evento musical ao vivo com áreas VIP,
+                            meia entrada e inteira.
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo">
+
+                            Regras do Evento
+
+                        </button>
+                    </h2>
+
+                    <div id="collapseTwo"
+                         class="accordion-collapse collapse"
+                         data-bs-parent="#accordionInfo">
+
+                        <div class="accordion-body">
+                            Obrigatória apresentação de documento
+                            com foto.
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <form>
+
+                <!-- Nome -->
+                <div class="form-floating mb-3">
+                    <input type="text"
+                           class="form-control"
+                           id="nome"
+                           placeholder="Digite seu nome">
+
+                    <label for="nome">Nome Completo</label>
+                </div>
+
+                <!-- Email -->
+                <div class="form-floating mb-3">
+                    <input type="email"
+                           class="form-control"
+                           id="email"
+                           placeholder="Digite seu e-mail">
+
+                    <label for="email">E-mail</label>
+                </div>
+
+                <!-- Valor -->
+                <div class="input-group mb-3">
+                    <span class="input-group-text">R$</span>
+
+                    <input type="number"
+                           class="form-control"
+                           placeholder="Valor do ingresso">
+                </div>
+
+                <!-- Quantidade -->
+                <div class="form-floating mb-3">
+                    <input type="number"
+                           class="form-control"
+                           id="quantidade"
+                           placeholder="Quantidade">
+
+                    <label for="quantidade">
+                        Quantidade de Ingressos
+                    </label>
+                </div>
+
+                <!-- Tipo -->
+                <div class="mb-3">
+
+                    <label class="form-label">
+                        Tipo de Ingresso
+                        <span class="badge bg-primary">Novo</span>
+                    </label>
+
+                    <select class="form-select">
+                        <option selected>Selecione</option>
+                        <option>Inteira</option>
+                        <option>Meia Entrada</option>
+                        <option>VIP</option>
+                    </select>
+
+                </div>
+
+                <!-- Botão -->
+                <div class="d-grid">
+                    <button type="submit"
+                            class="btn btn-primary">
+
+                        Comprar Ingresso
+
                     </button>
                 </div>
 
