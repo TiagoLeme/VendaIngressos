@@ -12,7 +12,7 @@
 <body class="bg-light">
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow">
     <div class="container">
-        <a class="navbar-brand" href="#">🎸 Rock Tickets</a>
+        <a class="navbar-brand" href="#">🎸 Venda de ingressos</a>
 
         <button class="navbar-toggler"
                 type="button"
@@ -272,34 +272,32 @@
                         <option>VIP</option>
                     </select>
 
-                </div>
+         <div class="d-grid gap-2">
 
-                <!-- Botão -->
-                <div class="d-grid">
-                   <button type="submit"
-                            class="btn btn-primary"
-                            data-bs-toggle="popover"
-                            data-bs-trigger="hover focus"
-                            data-bs-placement="top"
-                            data-bs-title="Compra de Ingressos"
-                            data-bs-content="Preencha todos os campos antes de finalizar a compra.">
+    <button type="submit"
+            class="btn btn-primary"
+            data-bs-toggle="popover"
+            data-bs-trigger="hover focus"
+            data-bs-placement="top"
+            data-bs-title="Compra de Ingressos"
+            data-bs-content="Preencha todos os campos antes de finalizar a compra.">
 
+        Comprar Ingresso
 
-                        Comprar Ingresso
+    </button>
 
-                    </button>
-                    <div class="d-grid mt-2">
-            <button type="button"
+    <button type="button"
             class="btn btn-outline-secondary"
             data-bs-toggle="popover"
             data-bs-trigger="hover focus"
             data-bs-placement="bottom"
-            data-bs-title="Informação"
-            data-bs-content="Ingressos VIP possuem acesso à área exclusiva próxima ao palco.">
+            data-bs-title="Área VIP"
+            data-bs-content="Os ingressos VIP oferecem acesso à área exclusiva próxima ao palco.">
 
         Informações VIP
 
     </button>
+
 </div>
                 </div>
 
@@ -573,14 +571,14 @@
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <script>
-    const popoverTriggerList =
-        document.querySelectorAll('[data-bs-toggle="popover"]');
+const popoverTriggerList =
+document.querySelectorAll('[data-bs-toggle="popover"]');
 
-    const popoverList =
-        [...popoverTriggerList].map(
-            popoverTriggerEl =>
-            new bootstrap.Popover(popoverTriggerEl)
-        );
+const popoverList =
+[...popoverTriggerList].map(
+popoverTriggerEl =>
+new bootstrap.Popover(popoverTriggerEl)
+);
 </script>
 </body>
 </html>
